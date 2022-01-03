@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import AboutLogo from "../shared/AboutLogo"
 
 function AddSpace() {
   const [textchange, setTextChange] = useState("")
@@ -23,8 +24,8 @@ function AddSpace() {
         <h3>Whatever: {addition}</h3>
       </div>
 
-      <Link to='/about' className="link-dec">
-        <h3>About Page</h3>
+      <Link to='/about' className='link-dec'>
+        <AboutLogo />
       </Link>
     </>
   )

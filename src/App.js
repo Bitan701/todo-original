@@ -4,8 +4,8 @@ import Header from "./components/Header"
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-function App() {
 
+function App() {
   return (
     <Router>
       <div className='container'>
@@ -21,7 +21,15 @@ function App() {
             }
           />
 
-          <Route exact path='/about' element={<AboutPage />}></Route>
+          <Route
+            exact
+            path='/about'
+            element={
+              <>
+                <AboutPage />
+              </>
+            }
+          ></Route>
         </Routes>
       </div>
     </Router>
