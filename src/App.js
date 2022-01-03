@@ -5,9 +5,6 @@ import Header from "./components/Header"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 function App() {
-  const btnfunction = () => {
-    console.log("Clicked")
-  }
 
   return (
     <Router>
@@ -19,7 +16,7 @@ function App() {
             element={
               <>
                 <Header />
-                <AddSpace onClick={btnfunction} />
+                <AddSpace />
               </>
             }
           />
